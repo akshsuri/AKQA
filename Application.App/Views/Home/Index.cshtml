@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-app="myApp" ng-controller="myController">
+    <div class="col-md-6">
+        <h2 class="label-primary" style="text-align:center">Application</h2>
+        <fieldset class="panel data-display">
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="lblname">Name</label>
+                    <input type="text" class="form-control" id="lblname" placeholder="Name" ng-model="name" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="lblamt">Amount</label>
+                    <input type="text" class="form-control" id="lblamt" placeholder="Amount" ng-model="amount" ng-change="AmountChange()" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <label class="text-primary">{{name}}</label><br />
+                    <label class="text-primary">{{response}}</label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</div>
+

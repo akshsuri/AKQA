@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Contents/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/External/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/External/angular.js"></script>
+    <script src="~/Scripts/External/bootstrap.js"></script>
+    <script src="~/Scripts/MyScripts/app.js"></script>
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+
+        @RenderSection("scripts", required: false)
+        <hr />
+    </div>
+
+</body>
+</html>
